@@ -1,0 +1,204 @@
+C:\Users\cebot\AppData\Local\Programs\Python\Python311\python.exe C:\Users\cebot\Desktop\sklearn\main.py
+Описание структуры набора данных:
+               Age  Sex ChestPainType  ...     Oldpeak  ST_Slope  HeartDisease
+count   533.000000  589           589  ...  589.000000       589    589.000000
+unique         NaN    2             4  ...         NaN         3           NaN
+top            NaN    M           ASY  ...         NaN      Flat           NaN
+freq           NaN  477           348  ...         NaN       325           NaN
+mean     54.195122  NaN           NaN  ...    0.937521       NaN      0.646859
+std       9.532661  NaN           NaN  ...    1.071318       NaN      0.478352
+min      28.000000  NaN           NaN  ...   -2.600000       NaN      0.000000
+25%      48.000000  NaN           NaN  ...    0.000000       NaN      0.000000
+50%      55.000000  NaN           NaN  ...    0.800000       NaN      1.000000
+75%      61.000000  NaN           NaN  ...    1.600000       NaN      1.000000
+max      77.000000  NaN           NaN  ...    5.000000       NaN      1.000000
+
+[11 rows x 12 columns]
+
+Атрибут: Age
+Текстовое описание: Age
+Цифровое описание: count    533.000000
+mean      54.195122
+std        9.532661
+min       28.000000
+25%       48.000000
+50%       55.000000
+75%       61.000000
+max       77.000000
+Name: Age, dtype: float64
+
+Атрибут: Sex
+Текстовое описание: Sex
+Цифровое описание: count     589
+unique      2
+top         M
+freq      477
+Name: Sex, dtype: object
+
+Атрибут: ChestPainType
+Текстовое описание: ChestPainType
+Цифровое описание: count     589
+unique      4
+top       ASY
+freq      348
+Name: ChestPainType, dtype: object
+
+Атрибут: RestingBP
+Текстовое описание: RestingBP
+Цифровое описание: count    588.000000
+mean     133.358844
+std       18.851852
+min       80.000000
+25%      120.000000
+50%      130.000000
+75%      144.000000
+max      200.000000
+Name: RestingBP, dtype: float64
+
+Атрибут: Cholesterol
+Текстовое описание: Cholesterol
+Цифровое описание: count    462.000000
+mean     245.632035
+std       58.599184
+min       85.000000
+25%      209.000000
+50%      240.000000
+75%      279.750000
+max      603.000000
+Name: Cholesterol, dtype: float64
+
+Атрибут: FastingBS
+Текстовое описание: FastingBS
+Цифровое описание: count    589.000000
+mean       0.258065
+std        0.437942
+min        0.000000
+25%        0.000000
+50%        0.000000
+75%        1.000000
+max        1.000000
+Name: FastingBS, dtype: float64
+
+Атрибут: RestingECG
+Текстовое описание: RestingECG
+Цифровое описание: count        589
+unique         3
+top       Normal
+freq         345
+Name: RestingECG, dtype: object
+
+Атрибут: MaxHR
+Текстовое описание: MaxHR
+Цифровое описание: count    589.000000
+mean     134.893039
+std       24.942596
+min       63.000000
+25%      117.000000
+50%      135.000000
+75%      154.000000
+max      195.000000
+Name: MaxHR, dtype: float64
+
+Атрибут: ExerciseAngina
+Текстовое описание: ExerciseAngina
+Цифровое описание: count     589
+unique      2
+top         N
+freq      325
+Name: ExerciseAngina, dtype: object
+
+Атрибут: Oldpeak
+Текстовое описание: Oldpeak
+Цифровое описание: count    589.000000
+mean       0.937521
+std        1.071318
+min       -2.600000
+25%        0.000000
+50%        0.800000
+75%        1.600000
+max        5.000000
+Name: Oldpeak, dtype: float64
+
+Атрибут: ST_Slope
+Текстовое описание: ST_Slope
+Цифровое описание: count      589
+unique       3
+top       Flat
+freq       325
+Name: ST_Slope, dtype: object
+
+Атрибут: HeartDisease
+Текстовое описание: HeartDisease
+Цифровое описание: count    589.000000
+mean       0.646859
+std        0.478352
+min        0.000000
+25%        0.000000
+50%        1.000000
+75%        1.000000
+max        1.000000
+Name: HeartDisease, dtype: float64
+Распределение классов в обучающих данных:
+HeartDisease
+1.0    381
+0.0    208
+Name: count, dtype: int64
+
+Кластеризация данных на сбалансированной выборке:
+C:\Users\cebot\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+Лучший алгоритм кластеризации: AgglomerativeClustering
+
+Logistic Regression
+Точность: 0.8781725888324873
+              precision    recall  f1-score   support
+
+         0.0       0.83      0.83      0.83        70
+         1.0       0.91      0.91      0.91       127
+
+    accuracy                           0.88       197
+   macro avg       0.87      0.87      0.87       197
+weighted avg       0.88      0.88      0.88       197
+
+
+Random Forest
+Точность: 0.8730964467005076
+              precision    recall  f1-score   support
+
+         0.0       0.85      0.79      0.81        70
+         1.0       0.89      0.92      0.90       127
+
+    accuracy                           0.87       197
+   macro avg       0.87      0.85      0.86       197
+weighted avg       0.87      0.87      0.87       197
+
+
+Gradient Boosting
+Точность: 0.8730964467005076
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.83      0.82        70
+         1.0       0.90      0.90      0.90       127
+
+    accuracy                           0.87       197
+   macro avg       0.86      0.86      0.86       197
+weighted avg       0.87      0.87      0.87       197
+
+
+Лучшая модель: LogisticRegression с точностью 0.8781725888324873
+
+Симуляция непрерывного обучения:
+
+Обновленная модель
+Точность: 0.5685279187817259
+              precision    recall  f1-score   support
+
+         0.0       0.22      0.09      0.12        70
+         1.0       0.62      0.83      0.71       127
+
+    accuracy                           0.57       197
+   macro avg       0.42      0.46      0.42       197
+weighted avg       0.48      0.57      0.50       197
+
+
+Process finished with exit code 0
